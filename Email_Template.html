@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding:0px;
+            width:100%;
+            background-color:bisque;
+            font-family: poppins, sans;
+            display: flex;
+            justify-content: center;
+            
+        }
+        main{
+            margin: 0;
+            padding:0;
+            width:100%;
+            max-width:750px;
+            background-color: white;
+            display: block;
+            box-shadow: 0 0 45px rgb(101, 101, 101);
+        }
+        
+        /* Header */
+        header{
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding:5px 0;
+        }
+        header h1,
+        header ul{
+            padding:20px 0;
+            margin: 0;
+        }
+        header h1{
+            font-size:3em;
+            text-align:center;
+            font-family: braisetto, cursive;
+            text-shadow: -3px 3px 5px black;
+        }
+        
+        /* Landing */
+        #landing{
+            width:100%;
+            height:500px;
+            background-image: url("img/Food/croissant-and-berries-pexels-valeria-boltneva-1510682-medium.jpg");
+            background-color: rgba(0, 0, 0, .4);
+            background-blend-mode: multiply;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+        }
+        #landing>h1{
+            width:100%;
+            align-self: center;
+            text-align: center;
+            transform: translateY(-80px);
+            color:white;
+            text-shadow: 2px 2px 2px black;
+            font-size: 4em;
+        }
+        #landing .button{
+            bottom:10%;
+        }
+        /* News */
+        #news{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 50px 0;
+        }
+        #news h1{
+            width:100%;
+            text-align: center;
+        }
+        .newscard{
+            width:300px;
+            text-align:center;
+            padding:0 5px;
+        }
+        .newscard hr{
+            margin-bottom: 30px;
+        }
+    
+        .newscard-img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width:300px;
+            height:300px;
+            border: none;
+            width:100%;
+            margin: 0;
+        }
+        /* Footer */
+        footer{
+            display: block;
+            padding-bottom: 20px;
+            background-color:black;
+        }
+        footer ul{
+            list-style-type: none;
+            display:flex;
+            justify-content: space-between;
+            margin:0;
+            padding:40px 100px;
+        }
+        footer a{
+            text-decoration: none;
+            color:white;
+        }
+        /* Miscellaneous */
+        .border{
+            margin:0;
+            height:8px;
+            background-color:black;
+        }
+        .border2{
+            margin:0;
+            height:2px;
+            background-color:black;
+        }
+        .button{
+            color:rgb(46, 46, 46);
+            padding: 10px 22px;
+            background-color:rgb(255, 188, 101);
+            position:absolute;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3em;
+            box-shadow: 0 0 20px black;
+        }
+        .social{
+            padding: 0;
+            display:flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+        .social img{
+            width:32px;
+            padding:0 12px;
+        }
+        @media (width<500px){
+            header{
+                flex-direction:column;
+                justify-content: center;
+            }
+            footer ul{
+                display: block;
+                text-align: center;
+            }
+            footer ul li{
+                padding:5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <hr class="border">
+        <!-- header  -->
+        <header>
+            <!-- logo -->
+            <h1>Cafe Manet</h1>
+            <!-- social links -->
+            <ol class="social">
+                <li><a href="#facebook.com/cafemanet"><img src="img/Icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#twitter.com/cafemanet"><img src="img/Icons/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#instagram.com/cafemanet"><img src="img/Icons/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </header>
+        <hr class="border2">
+        <!-- landing pad  -->
+        <article id="landing">
+            <!-- Invites -->
+            <h1>Specials!</h1>
+            <!-- menu button -->
+            <a href="index.html/#menu" class="button">Menu</a>
+        </article>
+        <hr class="border2">
+        <!-- news and links -->
+        <article id="news">
+            <h1>Links, News, Updates</h1>
+            <section class="newscard">
+                <!-- Menu Highlight -->
+                <h2>Menu Highlight</h2>
+                <hr>
+                <h3>Cream of potato Soup</h3>
+                <a href="#" alt="test" title="test">
+                    <hr class="newscard-img" style="background-image: url('img/Food/pexels-anna-nekrashevich-7214488.jpg')">
+                </a>
+                <p>Creamy potato soup</p>
+            </section>
+            <section class="newscard">
+                <!-- Recipe -->
+                <h2>Recipie</h2>
+                <hr>
+                <h3>Pancakes</h3>
+                <a href="#" alt="test" title="test">
+                    <hr class="newscard-img" style="background-image: url('img/Food/pancakes_pexels-alesia-kozik-6072378_medium.jpg')">
+                </a>
+                <p>Buttered pancakes with the honey glaze</p>
+            </section>
+            <section class="newscard">
+                <!-- Events -->
+                <h2>Events</h2>
+                <hr>
+                <h3>Painting Showcase</h3>
+                <a href="#" alt="test" title="test">
+                    <hr class="newscard-img" style="background-image: url('img/Manet/edouard-manet-young-flautist-or-the-fifer-1866.jpg')">
+                </a>
+                <p>A painting from Edward manet has made it into the building, Come check it out at cafe Manet</p>
+            </section>
+        </article>
+        <!-- Footer -->
+        <footer>
+            <!-- Footer Links -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html/#menu">Menu</a></li>
+                <li><a href="index.html/#about">About</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="#order.html">Order Online</a></li>
+            </ul>
+            <!-- Social Media -->
+            <ol class="social">
+                <li><a href="#facebook.com/cafemanet"><img src="img/Icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#twitter.com/cafemanet"><img src="img/Icons/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#instagram.com/cafemanet"><img src="img/Icons/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>

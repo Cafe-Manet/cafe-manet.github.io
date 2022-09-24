@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+a{
+    text-decoration-line: none;
+}
+body {
+    display: block;
+    max-width: 100vw;
+    margin: 0;
+}
+/* ----------------------Header */
+header{
+    display: inherit;
+}
+header div {
+    background-color: white;
+    height: 250px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+header img {
+    height: 150px;
+}
+
+/* -------------------------main */
+main{
+    background-image: url("../img/Downloads/pexels-pixabay-326311.jpg");
+    background-size: cover;
+    max-width: 100vw;
+    margin: auto;
+    padding: 15% 10%;
+}
+form {
+    border-radius: 1em;
+    margin: auto;
+    padding: 2%;
+    background-color: white;
+    box-shadow: -5px 10px 15px;
+    font-family: 'poppins', sans-serif;
+}
+form li+li {
+    margin-top: 2em;
+}
+li button+p{
+    display: inline;
+}
+form > p{
+    font-family:poppins;
+}
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+    font-family: poppins, sans-serif;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+                By default, textareas have a monospace font */
+    font: 1em poppins;
+
+    /* Uniform text field size */
+    width: 75%;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+
+    padding-left: 7px;
+}
+
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+.button {
+    /* Align buttons with the text fields */
+    padding-left: 15%;
+    /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space between the labels and their text fields */
+    margin-left: .5em;
+    font-family: poppins, lato, Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: .2em;
+    padding: 0 1em;
+}
+
+@media (max-width:630px) {
+    form{
+        margin:0;
+        width: 100%;
+    }
+}
+@media (max-width:826px) {
+    nav ul{
+        visibility: hidden;
+    }
+    
+}
+@media (min-width:826.001px) {
+    nav button {
+            visibility: hidden;
+        }
+    
+}

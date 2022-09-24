@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" xml:lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Cafe Manet | Careers</title>
+        <link rel="icon" href="../../Cafe Manet Images/Assets/Logo/Logo - brown backgroundSVG.svg">
+        <link href="css/styles.css" rel="stylesheet" type="text/css" content-type="utf-8">
+        <link href="css/careers.css" rel="stylesheet" type="text/css" content-type="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?&family=Chonburi&family=Allan&family=Arima+Madurai:wght@500&family=Righteous&display&family=Lobster&display&family=Shadows+into+light&&family=Forum&display&family=Cookie&display&&family=Berkshire+Swash&family=Petit+Formal+Script&display&family=Dawning+of+a+New+Day&display&family=Poppins:wght@300&display&=swap"
+			rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <header>
+            <!--<h1 class="navlogo">Cafe Manet</h1>-->
+            <!-- <div>
+                <a href="/Cafe Manet Website/Cafe Manet/index.html"><img src="../../Cafe Manet Images/Assets/Logo/Cafe_Manet_branches@2x.png" alt="logo"></a>
+            </div> -->
+            <nav>
+                <button>
+                    <a>
+                        <img src="../Cafe Manet/img/Assets/Icons/Hamburger_menuSVG.svg" alt="hamburger menu" width="44px">
+                    </a>
+                </button>
+                <ul>
+                    <a href="../Cafe Manet/index.html"><li>Home</li></a>
+                    <a href="../Cafe Manet/index.html#menu-html"><li>Menu</li></a>
+                    <a href="../Cafe Manet/index.html#location"><li>Location</li></a>
+                    <a href="../Cafe Manet/index.html#landing-pad"><li>About</li></a>
+                    <a href="#Order_Online"><li>Order Online</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="/Cafe Manet Website/Cafe Manet/Forms/" method="post" name="Application Form" enctype="multipart/form-data" autocomplete="on">
+                <h1>Application Form</h1>
+                <p>Please apply by filling out this form. Accepted file formats (.pdf, .docx).</p>
+                <ul>
+                    <li>
+                        <input type="file" id="resume" accept=".pdf, .docx" style="border:none; padding:0"></input>
+                        <!-- add js resume element on load -->
+                    </li>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" placeholder="First Last" required="required" autocomplete="name">
+                    </li>
+                    <li>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="mail" name="user_email" placeholder="User@email.com" autocomplete="email">
+                    </li>
+                    <li>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-0000" autocomplete="phone">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message" placeholder="Anything you would like us to know about you."></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </main>
+        <!--                  footer           -->
+        <footer class="y">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#menu-sections">Menu</a></li>
+                <li><a href="index.html#location">Location</a></li>
+                <li><a href="index.html#landing-pad">About</a></li>
+                <li><a href="#">Order Online</a></li>
+            </ul>
+            <p>&copy Cafe Manet 2021</p>
+        </footer>
+        <script src="../Cafe Manet/js/Manet.js" type="text/javascript"></script>
+    </body>
+
+ 
